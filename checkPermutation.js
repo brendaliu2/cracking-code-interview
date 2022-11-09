@@ -1,8 +1,8 @@
-// ask if casing matters. solution doesn't care about case
+// ask if casing matters
+// ask if white space matters
 
 function checkPermutation (str1, str2) {
-  let s1 = str1.toLowerCase();
-  let s2 = str2.toLowerCase();
+  if(str1.length !== str2.length) return false;
 
   const s1Freq = {};
   const s2Freq = {};
