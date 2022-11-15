@@ -24,4 +24,9 @@ class StackOfPlates {
       return popped;
     }
   }
+
+  popAt(stackIdx) {
+    if (!this.stackSet.length) return 'Empty Stack';
+    return this.stackSet[stackIdx].pop();
+  }
 }
